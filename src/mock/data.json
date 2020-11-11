@@ -1,0 +1,334 @@
+[
+    {
+        "id": 1,
+        "description": "Beautiful mountains",
+        "likes": 10,
+        "author": {
+            "id": 1,
+            "username": "Paul",
+            "email": "paul.bratslavsky@gmail.com",
+            "provider": "local",
+            "confirmed": true,
+            "blocked": false,
+            "role": 2,
+            "created_at": "2020-11-10T22:31:19.793Z",
+            "updated_at": "2020-11-10T22:31:19.826Z"
+        },
+        "published_at": "2020-11-10T22:31:43.694Z",
+        "created_at": "2020-11-10T22:30:35.205Z",
+        "updated_at": "2020-11-10T22:31:43.727Z",
+        "image": {
+            "id": 1,
+            "name": "mountains.jpg",
+            "alternativeText": "",
+            "caption": "",
+            "width": 5122,
+            "height": 3520,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_mountains.jpg",
+                    "hash": "thumbnail_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 227,
+                    "height": 156,
+                    "size": 6.23,
+                    "path": null,
+                    "url": "/uploads/thumbnail_mountains_f16b45d880.jpg"
+                },
+                "large": {
+                    "name": "large_mountains.jpg",
+                    "hash": "large_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 1000,
+                    "height": 687,
+                    "size": 73.97,
+                    "path": null,
+                    "url": "/uploads/large_mountains_f16b45d880.jpg"
+                },
+                "medium": {
+                    "name": "medium_mountains.jpg",
+                    "hash": "medium_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 750,
+                    "height": 515,
+                    "size": 45.47,
+                    "path": null,
+                    "url": "/uploads/medium_mountains_f16b45d880.jpg"
+                },
+                "small": {
+                    "name": "small_mountains.jpg",
+                    "hash": "small_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 500,
+                    "height": 344,
+                    "size": 22.17,
+                    "path": null,
+                    "url": "/uploads/small_mountains_f16b45d880.jpg"
+                }
+            },
+            "hash": "mountains_f16b45d880",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 1879.57,
+            "url": "/uploads/mountains_f16b45d880.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2020-11-10T22:29:57.695Z",
+            "updated_at": "2020-11-10T22:29:57.713Z"
+        }
+    },
+    {
+        "id": 2,
+        "description": "Amazing View",
+        "likes": 12,
+        "author": {
+            "id": 1,
+            "username": "Paul",
+            "email": "paul.bratslavsky@gmail.com",
+            "provider": "local",
+            "confirmed": true,
+            "blocked": false,
+            "role": 2,
+            "created_at": "2020-11-10T22:31:19.793Z",
+            "updated_at": "2020-11-10T22:31:19.826Z"
+        },
+        "published_at": "2020-11-10T22:32:49.112Z",
+        "created_at": "2020-11-10T22:32:48.176Z",
+        "updated_at": "2020-11-10T22:32:49.140Z",
+        "image": {
+            "id": 3,
+            "name": "trees.jpg",
+            "alternativeText": "",
+            "caption": "",
+            "width": 6000,
+            "height": 4000,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_trees.jpg",
+                    "hash": "thumbnail_trees_715e2ad51d",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 234,
+                    "height": 156,
+                    "size": 5.75,
+                    "path": null,
+                    "url": "/uploads/thumbnail_trees_715e2ad51d.jpg"
+                },
+                "large": {
+                    "name": "large_trees.jpg",
+                    "hash": "large_trees_715e2ad51d",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 1000,
+                    "height": 667,
+                    "size": 57.11,
+                    "path": null,
+                    "url": "/uploads/large_trees_715e2ad51d.jpg"
+                },
+                "medium": {
+                    "name": "medium_trees.jpg",
+                    "hash": "medium_trees_715e2ad51d",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 750,
+                    "height": 500,
+                    "size": 35.33,
+                    "path": null,
+                    "url": "/uploads/medium_trees_715e2ad51d.jpg"
+                },
+                "small": {
+                    "name": "small_trees.jpg",
+                    "hash": "small_trees_715e2ad51d",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 500,
+                    "height": 333,
+                    "size": 18.45,
+                    "path": null,
+                    "url": "/uploads/small_trees_715e2ad51d.jpg"
+                }
+            },
+            "hash": "trees_715e2ad51d",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 3384.13,
+            "url": "/uploads/trees_715e2ad51d.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2020-11-10T22:29:58.390Z",
+            "updated_at": "2020-11-10T22:29:58.408Z"
+        }
+    },
+    {
+        "id": 3,
+        "description": "Don't you wish you can go there.",
+        "likes": 31,
+        "author": {
+            "id": 1,
+            "username": "Paul",
+            "email": "paul.bratslavsky@gmail.com",
+            "provider": "local",
+            "confirmed": true,
+            "blocked": false,
+            "role": 2,
+            "created_at": "2020-11-10T22:31:19.793Z",
+            "updated_at": "2020-11-10T22:31:19.826Z"
+        },
+        "published_at": "2020-11-10T22:33:20.495Z",
+        "created_at": "2020-11-10T22:33:18.290Z",
+        "updated_at": "2020-11-10T22:33:20.521Z",
+        "image": {
+            "id": 2,
+            "name": "castle.jpg",
+            "alternativeText": "",
+            "caption": "",
+            "width": 5184,
+            "height": 2920,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_castle.jpg",
+                    "hash": "thumbnail_castle_6d16778182",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 245,
+                    "height": 138,
+                    "size": 5.88,
+                    "path": null,
+                    "url": "/uploads/thumbnail_castle_6d16778182.jpg"
+                },
+                "large": {
+                    "name": "large_castle.jpg",
+                    "hash": "large_castle_6d16778182",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 1000,
+                    "height": 563,
+                    "size": 59.28,
+                    "path": null,
+                    "url": "/uploads/large_castle_6d16778182.jpg"
+                },
+                "medium": {
+                    "name": "medium_castle.jpg",
+                    "hash": "medium_castle_6d16778182",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 750,
+                    "height": 422,
+                    "size": 35.68,
+                    "path": null,
+                    "url": "/uploads/medium_castle_6d16778182.jpg"
+                },
+                "small": {
+                    "name": "small_castle.jpg",
+                    "hash": "small_castle_6d16778182",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 500,
+                    "height": 282,
+                    "size": 17.97,
+                    "path": null,
+                    "url": "/uploads/small_castle_6d16778182.jpg"
+                }
+            },
+            "hash": "castle_6d16778182",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 2529.65,
+            "url": "/uploads/castle_6d16778182.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2020-11-10T22:29:58.216Z",
+            "updated_at": "2020-11-10T22:29:58.233Z"
+        }
+    },
+    {
+        "id": 4,
+        "description": "Only in a fairytale.",
+        "likes": 23,
+        "author": {
+            "id": 1,
+            "username": "Paul",
+            "email": "paul.bratslavsky@gmail.com",
+            "provider": "local",
+            "confirmed": true,
+            "blocked": false,
+            "role": 2,
+            "created_at": "2020-11-10T22:31:19.793Z",
+            "updated_at": "2020-11-10T22:31:19.826Z"
+        },
+        "published_at": "2020-11-10T22:33:45.569Z",
+        "created_at": "2020-11-10T22:33:44.584Z",
+        "updated_at": "2020-11-10T22:33:45.598Z",
+        "image": {
+            "id": 1,
+            "name": "mountains.jpg",
+            "alternativeText": "",
+            "caption": "",
+            "width": 5122,
+            "height": 3520,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_mountains.jpg",
+                    "hash": "thumbnail_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 227,
+                    "height": 156,
+                    "size": 6.23,
+                    "path": null,
+                    "url": "/uploads/thumbnail_mountains_f16b45d880.jpg"
+                },
+                "large": {
+                    "name": "large_mountains.jpg",
+                    "hash": "large_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 1000,
+                    "height": 687,
+                    "size": 73.97,
+                    "path": null,
+                    "url": "/uploads/large_mountains_f16b45d880.jpg"
+                },
+                "medium": {
+                    "name": "medium_mountains.jpg",
+                    "hash": "medium_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 750,
+                    "height": 515,
+                    "size": 45.47,
+                    "path": null,
+                    "url": "/uploads/medium_mountains_f16b45d880.jpg"
+                },
+                "small": {
+                    "name": "small_mountains.jpg",
+                    "hash": "small_mountains_f16b45d880",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "width": 500,
+                    "height": 344,
+                    "size": 22.17,
+                    "path": null,
+                    "url": "/uploads/small_mountains_f16b45d880.jpg"
+                }
+            },
+            "hash": "mountains_f16b45d880",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 1879.57,
+            "url": "/uploads/mountains_f16b45d880.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2020-11-10T22:29:57.695Z",
+            "updated_at": "2020-11-10T22:29:57.713Z"
+        }
+    }
+]
