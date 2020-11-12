@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 const baseURL = 'http://localhost:1337'
 const filter = '/posts'
 
-export default function AddPost() {
+export default function AddPost({history}) {
     const [description, setDescription] = useState('')
     const [file, setFile] = useState(null)
 
@@ -13,28 +13,31 @@ export default function AddPost() {
 
         const formData = new FormData();
 
-   
-
-        if (description.length && file) {
+        if (description && file) {
 
             formData.append('data', JSON.stringify({description}))
             formData.append('files.image', file);
-
-            const response = await fetch(baseURL + filter, {
-                method: 'POST',
-                body: formData,
-            })
-
-            const data = await response.json()
-
-            console.log(data, "RESPONSE")
-            setDescription('')
-            imageInputRef.current.value = ""
-            setFile(null)
-
-            alert('Form Submitted')
+            try {
+                const response = await fetch(baseURL + filter, {
+                    method: 'POST',
+                    body: formData,
+                })
+    
+                const data = await response.json()
+    
+                console.log(data, "RESPONSE")
+                setDescription('')
+                imageInputRef.current.value = ""
+                setFile(null)
+    
+                alert('Form Submitted')
+                history.push('/')
+            } catch (error) {
+                console.error('EXCEPTION: ', error)
+            }
+            
         } else {
-            alert('Please add description')
+            alert('Please add description and (or) file')
         }
     }
 

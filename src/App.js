@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Header from './components/Header';
-import AddPost from './pages/add-post';
-import HomePage from './pages/home-page';
+import Header from './components/Header'
+import Loader from './components/Loader'
+import AddPost from './pages/add-post'
+import HomePage from './pages/home-page'
+import SinglePost from './pages/single-post'
 
 const baseURL = 'http://localhost:1337'
 const filter = '/posts'
@@ -19,6 +21,7 @@ function App() {
       fetch(baseURL + filter, { signal: abortController.signal })
       .then( res => res.json())
       .then( data => {
+        console.log(data)
         setPosts(data)
         setLoading(false)
       })
@@ -29,7 +32,7 @@ function App() {
 
   },[loading])
 
-  if (loading) return <h1>Loading data...</h1>
+  if (loading) return <Loader />
   return <main className="App">
       <Header />
       <div className="container">
@@ -37,6 +40,7 @@ function App() {
           <Route path="/" exact render={() => <HomePage posts={posts} />} />
           <Route path="/login" component={() => <h2>Login</h2>} />
           <Route path="/addpost" component={AddPost} />
+          <Route path="/:id" component={SinglePost} />
         </Switch>
       </div>  
   </main>

@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const baseURL = 'http://localhost:1337'
-export default function Post({id, description, author, published_at, likes, image}) {
-    return <Link to={`/${id}`}><article>
+
+export default function SinglePostView({post}) {
+    const { description, author, published_at, likes, image } = post;
+    return <article className="single-post-view">
         {  image && 
             <div className="image-container">
                 <img src={`${baseURL+image.formats.medium.url}`} alt={description} />
@@ -18,5 +19,5 @@ export default function Post({id, description, author, published_at, likes, imag
             <p>Likes: {likes}</p>
         </div>
         
-    </article></Link>
+    </article>
 }
