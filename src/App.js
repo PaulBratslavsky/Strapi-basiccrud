@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Loader from './components/Loader'
 import AddPost from './pages/add-post'
 import HomePage from './pages/home-page'
+import Login from './pages/login'
 import SinglePost from './pages/single-post'
 
 const baseURL = 'http://localhost:1337'
@@ -38,7 +39,7 @@ function App() {
       <div className="container">
         <Switch>
           <Route path="/" exact render={() => <HomePage posts={posts} />} />
-          <Route path="/login" component={() => <h2>Login</h2>} />
+          <Route path="/login" component={Login} />
           <Route path="/addpost" component={AddPost} />
           <Route path="/:id" component={SinglePost} />
         </Switch>
