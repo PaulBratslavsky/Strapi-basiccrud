@@ -3,9 +3,10 @@ import Loader from '../components/Loader';
 import { UserContext } from '../context/user.context'
 
 const baseURL = 'http://localhost:1337'
-const filter = '/auth/local'
+const filter = '/auth/local/register'
 
 const INITIAL_FORM_DATA = {
+    username: '',
     email: '',
     password: ''
 }
@@ -25,14 +26,15 @@ export default function Login({history}) {
      
     async function handleSubmit(e) {
         e.preventDefault(e)
-        const { email, password } = formData
+        const { email, password, username } = formData
         const params = {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
             },
             body: JSON.stringify({
-                identifier: email,
+                username: username,
+                email,
                 password
             })
         }
@@ -63,17 +65,27 @@ export default function Login({history}) {
 
     if (loading) return <Loader />
     return <div>
-        <h2>Login</h2>   
+        <h2>Signup</h2>   
         <form onSubmit={handleSubmit}>
             <input 
                 type="text"
+                name="username" 
+                value={formData.username}
+                onChange={(e) => {
+                    setFormData({...formData, [e.target.name]: e.target.value})
+                    setError('')
+                }}
+                placeholder="username" 
+            />
+            <input 
+                type="email"
                 name="email" 
                 value={formData.user}
                 onChange={(e) => {
                     setFormData({...formData, [e.target.name]: e.target.value})
                     setError('')
                 }}
-                placeholder="user name or email" 
+                placeholder="email" 
             />
             <input 
                 type="password"
@@ -85,7 +97,7 @@ export default function Login({history}) {
                 }}
                 placeholder="password" 
             />
-            <button>Login</button>
+            <button>Signup</button>
         </form>
 
         {error.length > 0 && <p><span style={{color: 'red'}}>Error Message: </span>{error}</p>}

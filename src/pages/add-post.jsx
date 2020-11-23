@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { UserContext } from '../context/user.context'
 const baseURL = 'http://localhost:1337'
 const filter = '/posts'
 
 export default function AddPost({history}) {
+    const { user } = useContext(UserContext) 
     const [description, setDescription] = useState('')
     const [file, setFile] = useState(null)
 
@@ -20,6 +22,9 @@ export default function AddPost({history}) {
             try {
                 const response = await fetch(baseURL + filter, {
                     method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${user.jwt}`
+                    },
                     body: formData,
                 })
     

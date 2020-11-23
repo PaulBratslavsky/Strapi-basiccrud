@@ -5,6 +5,7 @@ import Loader from './components/Loader'
 import AddPost from './pages/add-post'
 import HomePage from './pages/home-page'
 import Login from './pages/login'
+import Signup from './pages/signup'
 import SinglePost from './pages/single-post'
 
 const baseURL = 'http://localhost:1337'
@@ -40,6 +41,7 @@ function App() {
         <Switch>
           <Route path="/" exact render={() => <HomePage posts={posts} />} />
           <Route path="/login" component={Login} />
+          <Route path="/signup" component={Signup} />
           <Route path="/addpost" component={AddPost} />
           <Route path="/:id" component={SinglePost} />
         </Switch>
